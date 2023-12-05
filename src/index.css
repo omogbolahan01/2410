@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: unset;
+  color: unset;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  background-color: #000;
+}
+.home-region {
+  background-color: #000;
+}
+.top-region {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 4rem;
+}
+.top-region h3 {
+  font-family: Inter;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #ffffff;
+  padding-left: 25rem;
+  padding-right: 25rem;
+}
+.top-region p {
+  font-family: Inter;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 2.5rem;
+}
+.top-region button {
+  color: #ffffff;
+  background-color: #191919;
+  outline: none;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 15px;
+  font-family: Inter;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.empty {
+  border: 0.2px solid #232323;
+  margin-top: 4rem;
+}
+.social-area {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.social-area h4 {
+  font-family: Inter;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #ffffff;
+}
+.social-media {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.social-media img {
+  cursor: pointer;
+}
