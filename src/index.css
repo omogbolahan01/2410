@@ -14,11 +14,14 @@ a {
   text-decoration: unset;
   color: unset;
 }
-body::-webkit-scrollbar {
+.image-area::-webkit-scrollbar {
   display: none;
 }
+.image-area {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
 body {
-  overflow-x: hidden;
   -ms-overflow-style: none;
   scrollbar-width: none;
   background-color: #000;
@@ -40,8 +43,8 @@ body {
   letter-spacing: 0em;
   text-align: center;
   color: #ffffff;
-  padding-left: 25rem;
-  padding-right: 25rem;
+  padding-left: 20rem;
+  padding-right: 20rem;
 }
 .top-region p {
   font-family: Inter;
@@ -92,4 +95,27 @@ body {
 }
 .social-media img {
   cursor: pointer;
+}
+.image-area {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-left: 6rem;
+  margin-top: 4.5rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+  margin-bottom: 4rem;
+}
+
+.imagee {
+  background-color: #0b0b0b;
+  color: #ffffff;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+.imagee h4 {
+  font-family: Inter;
+  font-size: 0.8rem;
+  font-weight: 400;
 }

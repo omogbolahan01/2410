@@ -14,6 +14,42 @@ export default function Home() {
           <button>Send us an email</button>
         </div>
       </div>
+      <div className="image-area">
+        <div className="imagee">
+          <img src="/images/Rectangle 1 (5).png" />
+          <h4>Web development</h4>
+        </div>
+        <div className="imagee">
+          <img src="/images/Rectangle 1 (6).png" />
+          <h4>Branding</h4>
+        </div>
+
+        <div className="imagee">
+          <img src="/images/Rectangle 1 (7).png" />
+          <h4>web development</h4>
+        </div>
+        <div className="imagee">
+          <img src="/images/Rectangle 1 (8).png" />
+          <h4>Branding</h4>
+        </div>
+        <div className="imagee">
+          <img src="/images/Rectangle 1 (5).png" />
+          <h4>Web development</h4>
+        </div>
+        <div className="imagee">
+          <img src="/images/Rectangle 1 (6).png" />
+          <h4>Branding</h4>
+        </div>
+
+        <div className="imagee">
+          <img src="/images/Rectangle 1 (7).png" />
+          <h4>web development</h4>
+        </div>
+        <div className="imagee">
+          <img src="/images/Rectangle 1 (8).png" />
+          <h4>Branding</h4>
+        </div>
+      </div>
       <div className="empty"></div>
       <div className="social-area">
         <h4>Follows us on</h4>
