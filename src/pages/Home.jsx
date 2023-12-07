@@ -1,46 +1,18 @@
 import React, { useEffect, useRef } from "react";
 export default function Home() {
-  // const containerRef = useRef(null);
+  const SendEmailButton = () => {
+    const handleSendEmail = () => {
+      const emailAddress = "contact@2410studio.com";
+      const subject = "Inquiry from your website";
 
-  // useEffect(() => {
-  //   const container = containerRef.current;
+      const body = "Hello 2410 team,";
+      const mailtoUrl = `mailto:${emailAddress}?subject=${encodeURIComponent(
+        subject
+      )}&body=${encodeURIComponent(body)}`;
 
-  //   const animateScroll = () => {
-  //     if (container) {
-  //       container.scrollLeft += 1;
-  //       if (container.scrollLeft >= container.scrollWidth / 2) {
-  //         container.scrollLeft = 0;
-  //       }
-  //     }
-  //   };
-
-  //   const intervalId = setInterval(animateScroll, 20);
-  //   return () => {};
-  // }, []);
-  //   return () => clearInterval(intervalId);
-  // }, []);
-  // const containerRef = useRef(null);
-
-  // useEffect(() => {
-  //   const container = containerRef.current;
-
-  //   let animationId;
-
-  //   const animateScroll = () => {
-  //     if (container) {
-  //       container.scrollLeft += 1;
-  //       if (container.scrollLeft >= container.scrollWidth / 2) {
-  //         container.scrollLeft = 0;
-  //       }
-  //     }
-
-  //     animationId = requestAnimationFrame(animateScroll);
-  //   };
-
-  //   animateScroll();
-
-  //   return () => cancelAnimationFrame(animationId);
-  // }, []);
+      window.location.href = mailtoUrl;
+    };
+  };
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -64,9 +36,8 @@ export default function Home() {
     // Start the automatic scrolling animation
     animateScroll();
 
-    // The cleanup function cancels the animation frame when the component is unmounted
     return () => cancelAnimationFrame(animationId);
-  }, []); // Empty dependency array ensures the effect runs only once on mount
+  }, []);
 
   return (
     <div className="home-region">
@@ -79,7 +50,7 @@ export default function Home() {
         </h3>
         <div>
           <p>Have questions or inquiries?</p>
-          <button>Send us an email</button>
+          <button onClick={handleSendEmail}>Send us an email</button>
         </div>
       </div>
       <div className="image-area" ref={containerRef}>
