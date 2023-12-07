@@ -35,20 +35,23 @@ body {
   text-align: center;
   padding-top: 4rem;
 }
+.top-region img {
+  width: 20%;
+}
 .top-region h3 {
   font-family: Inter;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 32px;
   letter-spacing: 0em;
   text-align: center;
   color: #ffffff;
-  padding-left: 20rem;
-  padding-right: 20rem;
+  padding-left: 25rem;
+  padding-right: 25rem;
 }
 .top-region p {
   font-family: Inter;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   font-weight: 400;
   line-height: 26px;
   letter-spacing: 0em;
@@ -65,7 +68,7 @@ body {
   padding: 1rem;
   border-radius: 15px;
   font-family: Inter;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 .empty {
@@ -79,7 +82,7 @@ body {
 }
 .social-area h4 {
   font-family: Inter;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   font-weight: 400;
   line-height: 26px;
   letter-spacing: 0em;
@@ -100,7 +103,7 @@ body {
   display: flex;
   flex-direction: row;
   gap: 1rem;
-  margin-left: 6rem;
+  /* margin-left: 6rem; */
   margin-top: 4.5rem;
   overflow-x: auto;
   scrollbar-width: none;
@@ -117,6 +120,6 @@ body {
 
 .imagee h4 {
   font-family: Inter;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   font-weight: 400;
 }

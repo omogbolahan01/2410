@@ -1,9 +1,30 @@
 import React, { useEffect, useRef } from "react";
 export default function Home() {
+  // const containerRef = useRef(null);
+
+  // useEffect(() => {
+  //   const container = containerRef.current;
+
+  //   const animateScroll = () => {
+  //     if (container) {
+  //       container.scrollLeft += 1;
+  //       if (container.scrollLeft >= container.scrollWidth / 2) {
+  //         container.scrollLeft = 0;
+  //       }
+  //     }
+  //   };
+
+  //   const intervalId = setInterval(animateScroll, 20);
+  //   return () => {};
+  // }, []);
+  //   return () => clearInterval(intervalId);
+  // }, []);
   const containerRef = useRef(null);
 
   useEffect(() => {
     const container = containerRef.current;
+
+    let animationId;
 
     const animateScroll = () => {
       if (container) {
@@ -12,12 +33,15 @@ export default function Home() {
           container.scrollLeft = 0;
         }
       }
+
+      animationId = requestAnimationFrame(animateScroll);
     };
 
-    const intervalId = setInterval(animateScroll, 20);
+    animateScroll();
 
-    return () => clearInterval(intervalId);
+    return () => cancelAnimationFrame(animationId);
   }, []);
+
   return (
     <div className="home-region">
       <div className="top-region">
@@ -33,6 +57,40 @@ export default function Home() {
         </div>
       </div>
       <div className="image-area" ref={containerRef}>
+        <div className="imagee">
+          <img src="/images/Rectangle 1 (5).png" />
+          <h4>Web development</h4>
+        </div>
+        <div className="imagee">
+          <img src="/images/Rectangle 1 (6).png" />
+          <h4>Branding</h4>
+        </div>
+
+        <div className="imagee">
+          <img src="/images/Rectangle 1 (7).png" />
+          <h4>web development</h4>
+        </div>
+        <div className="imagee">
+          <img src="/images/Rectangle 1 (8).png" />
+          <h4>Branding</h4>
+        </div>
+        <div className="imagee">
+          <img src="/images/Rectangle 1 (5).png" />
+          <h4>Web development</h4>
+        </div>
+        <div className="imagee">
+          <img src="/images/Rectangle 1 (6).png" />
+          <h4>Branding</h4>
+        </div>
+
+        <div className="imagee">
+          <img src="/images/Rectangle 1 (7).png" />
+          <h4>web development</h4>
+        </div>
+        <div className="imagee">
+          <img src="/images/Rectangle 1 (8).png" />
+          <h4>Branding</h4>
+        </div>
         <div className="imagee">
           <img src="/images/Rectangle 1 (5).png" />
           <h4>Web development</h4>
