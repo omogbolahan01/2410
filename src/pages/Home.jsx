@@ -1,18 +1,17 @@
 import React, { useEffect, useRef } from "react";
 export default function Home() {
-  const SendEmailButton = () => {
-    const handleSendEmail = () => {
-      const emailAddress = "contact@2410studio.com";
-      const subject = "Inquiry from your website";
+  const handleSendEmail = () => {
+    const emailAddress = "contact@2410studio.com";
+    const subject = "Inquiry from your website";
 
-      const body = "Hello 2410 team,";
-      const mailtoUrl = `mailto:${emailAddress}?subject=${encodeURIComponent(
-        subject
-      )}&body=${encodeURIComponent(body)}`;
+    const body = "Hello 2410 team,";
+    const mailtoUrl = `mailto:${emailAddress}?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
 
-      window.location.href = mailtoUrl;
-    };
+    window.location.href = mailtoUrl;
   };
+
   const containerRef = useRef(null);
 
   useEffect(() => {
