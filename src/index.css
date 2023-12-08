@@ -105,37 +105,14 @@ body {
 }
 .image-area {
   display: flex;
-  flex-direction: row;
   gap: 1rem;
-  /* margin-left: 6rem; */
-  margin-top: 4.5rem;
+  margin-top: 4rem;
   overflow-x: auto;
-  scrollbar-width: none;
-  margin-bottom: 4rem;
-}
-
-.imagee {
-  background-color: #0b0b0b;
-  color: #ffffff;
-  padding-top: 1rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
-}
-.imagee img {
-  width: 100%;
-  object-fit: contain;
-}
-
-.imagee h4 {
-  font-family: Inter;
-  font-size: 0.85rem;
-  font-weight: 400;
 }
 .imageee {
-  width: 20rem;
+  width: 18rem;
 }
 .imageee img {
-  width: 100%;
-  height: 100%;
+  width: 18rem;
   object-fit: contain;
 }

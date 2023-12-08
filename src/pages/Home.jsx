@@ -11,28 +11,35 @@ export default function Home() {
 
     window.location.href = mailtoUrl;
   };
-
   const containerRef = useRef(null);
 
   useEffect(() => {
     const container = containerRef.current;
 
-    let animationId;
+    const scrollSpeed = 1; // Adjust the speed of the scroll
 
     const animateScroll = () => {
       if (container) {
-        container.scrollLeft += 1;
-        if (container.scrollLeft >= container.scrollWidth) {
+        container.scrollLeft += scrollSpeed;
+
+        if (
+          container.scrollLeft >=
+          container.scrollWidth - container.clientWidth
+        ) {
           container.scrollLeft = 0;
         }
       }
 
-      animationId = requestAnimationFrame(animateScroll);
+      requestAnimationFrame(animateScroll);
     };
 
-    animateScroll();
+    const startScrolling = () => {
+      animateScroll();
+    };
 
-    return () => cancelAnimationFrame(animationId);
+    startScrolling();
+
+    return () => {};
   }, []);
 
   return (
@@ -50,348 +57,60 @@ export default function Home() {
         </div>
       </div>
       <div className="image-area" ref={containerRef}>
-        <div className="imagee">
-          <div className="imageee">
-            <img src="/images/Rectangle 1 (16).png" />
-          </div>
-
-          <h4>Web development</h4>
-        </div>
-        <div className="imagee">
-          <div className="imageee">
-            <img src="/images/Rectangle 1 (15).png" />
-          </div>
-
-          <h4>Branding</h4>
-        </div>
-        <div className="imagee">
-          <div className="imageee">
-            <img src="/images/Rectangle 1 (14).png" />
-          </div>
-          <h4>web development</h4>
-        </div>
-        <div className="imagee">
-          <div className="imageee">
-            <img src="/images/Rectangle 1 (17).png" />
-          </div>
-
-          <h4>Branding</h4>
-        </div>
-        <div className="imagee">
-          <div className="imageee">
-            <img src="/images/Rectangle 1 (13).png" />
-          </div>
-
-          <h4>Web development</h4>
-        </div>
-        <div className="imagee">
-          <div className="imageee">
-            <img src="/images/Rectangle 1 (12).png" />
-          </div>
-
-          <h4>Branding</h4>
+        <div className="imageee">
+          <img src="/images/2410 images.png" />
         </div>
 
-        <div className="imagee">
-          <div className="imageee">
-            <img src="/images/Rectangle 1 (11).png" />
-          </div>
-
-          <h4>web development</h4>
+        <div className="imageee">
+          <img src="/images/2410 images (1).png" />
         </div>
-        <div className="imagee">
-          <div className="imageee">
-            <img src="/images/Rectangle 1 (16).png" />
-          </div>
-
-          <h4>Web development</h4>
+        <div className="imageee">
+          <img src="/images/2410 images (2).png" />
         </div>
-        <div className="imagee">
-          <div className="imageee">
-            <img src="/images/Rectangle 1 (15).png" />
-          </div>
-
-          <h4>Branding</h4>
+        <div className="imageee">
+          <img src="/images/2410 images (3).png" />
         </div>
-        <div className="imagee">
-          <div className="imageee">
-            <img src="/images/Rectangle 1 (14).png" />
-          </div>
-          <h4>web development</h4>
+        <div className="imageee">
+          <img src="/images/2410 images (4).png" />
         </div>
-        <div className="imagee">
-          <div className="imageee">
-            <img src="/images/Rectangle 1 (17).png" />
-          </div>
-
-          <h4>Branding</h4>
+        <div className="imageee">
+          <img src="/images/2410 images (5).png" />
         </div>
-        <div className="imagee">
-          <div className="imageee">
-            <img src="/images/Rectangle 1 (13).png" />
-          </div>
-
-          <h4>Web development</h4>
+        <div className="imageee">
+          <img src="/images/2410 images.png" />
         </div>
-        <div className="imagee">
-          <div className="imageee">
-            <img src="/images/Rectangle 1 (12).png" />
-          </div>
-
-          <h4>Branding</h4>
+        <div className="imageee">
+          <img src="/images/2410 images (1).png" />
         </div>
-
-        <div className="imagee">
-          <div className="imageee">
-            <img src="/images/Rectangle 1 (11).png" />
-          </div>
-
-          <h4>web development</h4>
+        <div className="imageee">
+          <img src="/images/2410 images (2).png" />
         </div>
-        <div className="imagee">
-          <div className="imageee">
-            <img src="/images/Rectangle 1 (16).png" />
-          </div>
-
-          <h4>Web development</h4>
+        <div className="imageee">
+          <img src="/images/2410 images (3).png" />
         </div>
-        <div className="imagee">
-          <div className="imageee">
-            <img src="/images/Rectangle 1 (15).png" />
-          </div>
-
-          <h4>Branding</h4>
+        <div className="imageee">
+          <img src="/images/2410 images (4).png" />
         </div>
-        <div className="imagee">
-          <div className="imageee">
-            <img src="/images/Rectangle 1 (14).png" />
-          </div>
-          <h4>web development</h4>
+        <div className="imageee">
+          <img src="/images/2410 images (5).png" />
         </div>
-        <div className="imagee">
-          <div className="imageee">
-            <img src="/images/Rectangle 1 (17).png" />
-          </div>
-
-          <h4>Branding</h4>
+        <div className="imageee">
+          <img src="/images/2410 images.png" />
         </div>
-        <div className="imagee">
-          <div className="imageee">
-            <img src="/images/Rectangle 1 (13).png" />
-          </div>
-
-          <h4>Web development</h4>
+        <div className="imageee">
+          <img src="/images/2410 images (1).png" />
         </div>
-        <div className="imagee">
-          <div className="imageee">
-            <img src="/images/Rectangle 1 (12).png" />
-          </div>
-
-          <h4>Branding</h4>
+        <div className="imageee">
+          <img src="/images/2410 images (2).png" />
         </div>
-
-        <div className="imagee">
-          <div className="imageee">
-            <img src="/images/Rectangle 1 (11).png" />
-          </div>
-
-          <h4>web development</h4>
+        <div className="imageee">
+          <img src="/images/2410 images (3).png" />
         </div>
-        <div className="imagee">
-          <div className="imageee">
-            <img src="/images/Rectangle 1 (16).png" />
-          </div>
-
-          <h4>Web development</h4>
+        <div className="imageee">
+          <img src="/images/2410 images (4).png" />
         </div>
-        <div className="imagee">
-          <div className="imageee">
-            <img src="/images/Rectangle 1 (15).png" />
-          </div>
-
-          <h4>Branding</h4>
-        </div>
-        <div className="imagee">
-          <div className="imageee">
-            <img src="/images/Rectangle 1 (14).png" />
-          </div>
-          <h4>web development</h4>
-        </div>
-        <div className="imagee">
-          <div className="imageee">
-            <img src="/images/Rectangle 1 (17).png" />
-          </div>
-
-          <h4>Branding</h4>
-        </div>
-        <div className="imagee">
-          <div className="imageee">
-            <img src="/images/Rectangle 1 (13).png" />
-          </div>
-
-          <h4>Web development</h4>
-        </div>
-        <div className="imagee">
-          <div className="imageee">
-            <img src="/images/Rectangle 1 (12).png" />
-          </div>
-
-          <h4>Branding</h4>
-        </div>
-
-        <div className="imagee">
-          <div className="imageee">
-            <img src="/images/Rectangle 1 (11).png" />
-          </div>
-
-          <h4>web development</h4>
-        </div>
-        <div className="imagee">
-          <div className="imageee">
-            <img src="/images/Rectangle 1 (16).png" />
-          </div>
-
-          <h4>Web development</h4>
-        </div>
-        <div className="imagee">
-          <div className="imageee">
-            <img src="/images/Rectangle 1 (15).png" />
-          </div>
-
-          <h4>Branding</h4>
-        </div>
-        <div className="imagee">
-          <div className="imageee">
-            <img src="/images/Rectangle 1 (14).png" />
-          </div>
-          <h4>web development</h4>
-        </div>
-        <div className="imagee">
-          <div className="imageee">
-            <img src="/images/Rectangle 1 (17).png" />
-          </div>
-
-          <h4>Branding</h4>
-        </div>
-        <div className="imagee">
-          <div className="imageee">
-            <img src="/images/Rectangle 1 (13).png" />
-          </div>
-
-          <h4>Web development</h4>
-        </div>
-        <div className="imagee">
-          <div className="imageee">
-            <img src="/images/Rectangle 1 (12).png" />
-          </div>
-
-          <h4>Branding</h4>
-        </div>
-
-        <div className="imagee">
-          <div className="imageee">
-            <img src="/images/Rectangle 1 (11).png" />
-          </div>
-
-          <h4>web development</h4>
-        </div>
-        <div className="imagee">
-          <div className="imageee">
-            <img src="/images/Rectangle 1 (16).png" />
-          </div>
-
-          <h4>Web development</h4>
-        </div>
-        <div className="imagee">
-          <div className="imageee">
-            <img src="/images/Rectangle 1 (15).png" />
-          </div>
-
-          <h4>Branding</h4>
-        </div>
-        <div className="imagee">
-          <div className="imageee">
-            <img src="/images/Rectangle 1 (14).png" />
-          </div>
-          <h4>web development</h4>
-        </div>
-        <div className="imagee">
-          <div className="imageee">
-            <img src="/images/Rectangle 1 (17).png" />
-          </div>
-
-          <h4>Branding</h4>
-        </div>
-        <div className="imagee">
-          <div className="imageee">
-            <img src="/images/Rectangle 1 (13).png" />
-          </div>
-
-          <h4>Web development</h4>
-        </div>
-        <div className="imagee">
-          <div className="imageee">
-            <img src="/images/Rectangle 1 (12).png" />
-          </div>
-
-          <h4>Branding</h4>
-        </div>
-
-        <div className="imagee">
-          <div className="imageee">
-            <img src="/images/Rectangle 1 (11).png" />
-          </div>
-
-          <h4>web development</h4>
-        </div>
-        <div className="imagee">
-          <div className="imageee">
-            <img src="/images/Rectangle 1 (16).png" />
-          </div>
-
-          <h4>Web development</h4>
-        </div>
-        <div className="imagee">
-          <div className="imageee">
-            <img src="/images/Rectangle 1 (15).png" />
-          </div>
-
-          <h4>Branding</h4>
-        </div>
-        <div className="imagee">
-          <div className="imageee">
-            <img src="/images/Rectangle 1 (14).png" />
-          </div>
-          <h4>web development</h4>
-        </div>
-        <div className="imagee">
-          <div className="imageee">
-            <img src="/images/Rectangle 1 (17).png" />
-          </div>
-
-          <h4>Branding</h4>
-        </div>
-        <div className="imagee">
-          <div className="imageee">
-            <img src="/images/Rectangle 1 (13).png" />
-          </div>
-
-          <h4>Web development</h4>
-        </div>
-        <div className="imagee">
-          <div className="imageee">
-            <img src="/images/Rectangle 1 (12).png" />
-          </div>
-
-          <h4>Branding</h4>
-        </div>
-
-        <div className="imagee">
-          <div className="imageee">
-            <img src="/images/Rectangle 1 (11).png" />
-          </div>
-
-          <h4>web development</h4>
+        <div className="imageee">
+          <img src="/images/2410 images (5).png" />
         </div>
       </div>
       <div className="empty"></div>
