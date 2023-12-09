@@ -110,9 +110,9 @@ body {
   overflow-x: auto;
 }
 .imageee {
-  width: 18rem;
+  width: 100%;
 }
 .imageee img {
-  width: 18rem;
+  width: ;
   object-fit: contain;
 }

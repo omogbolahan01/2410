@@ -16,7 +16,7 @@ export default function Home() {
   useEffect(() => {
     const container = containerRef.current;
 
-    const scrollSpeed = 1; // Adjust the speed of the scroll
+    const scrollSpeed = 1;
 
     const animateScroll = () => {
       if (container) {
