@@ -58,59 +58,67 @@ export default function Home() {
       </div>
       <div className="image-area" ref={containerRef}>
         <div className="imageee">
-          <img src="/images/2410 images.png" />
-        </div>
-
-        <div className="imageee">
-          <img src="/images/2410 images (1).png" />
+          <img src="/images/24 imeage.png" />
         </div>
         <div className="imageee">
-          <img src="/images/2410 images (2).png" />
+          <img src="/images/24 imeage-1.png" />
         </div>
         <div className="imageee">
-          <img src="/images/2410 images (3).png" />
+          <img src="/images/24 imeage-2.png" />
         </div>
         <div className="imageee">
-          <img src="/images/2410 images (4).png" />
+          <img src="/images/24 imeage-3.png" />
         </div>
         <div className="imageee">
-          <img src="/images/2410 images (5).png" />
+          <img src="/images/24 imeage-4.png" />
         </div>
         <div className="imageee">
-          <img src="/images/2410 images.png" />
+          <img src="/images/24 imeage-5.png" />
         </div>
         <div className="imageee">
-          <img src="/images/2410 images (1).png" />
+          <img src="/images/24 imeage-6.png" />
         </div>
         <div className="imageee">
-          <img src="/images/2410 images (2).png" />
+          <img src="/images/24 imeage.png" />
         </div>
         <div className="imageee">
-          <img src="/images/2410 images (3).png" />
+          <img src="/images/24 imeage-1.png" />
         </div>
         <div className="imageee">
-          <img src="/images/2410 images (4).png" />
+          <img src="/images/24 imeage-2.png" />
         </div>
         <div className="imageee">
-          <img src="/images/2410 images (5).png" />
+          <img src="/images/24 imeage-3.png" />
         </div>
         <div className="imageee">
-          <img src="/images/2410 images.png" />
+          <img src="/images/24 imeage-4.png" />
         </div>
         <div className="imageee">
-          <img src="/images/2410 images (1).png" />
+          <img src="/images/24 imeage-5.png" />
         </div>
         <div className="imageee">
-          <img src="/images/2410 images (2).png" />
+          <img src="/images/24 imeage-6.png" />
+        </div>{" "}
+        <div className="imageee">
+          <img src="/images/24 imeage.png" />
         </div>
         <div className="imageee">
-          <img src="/images/2410 images (3).png" />
+          <img src="/images/24 imeage-1.png" />
         </div>
         <div className="imageee">
-          <img src="/images/2410 images (4).png" />
+          <img src="/images/24 imeage-2.png" />
         </div>
         <div className="imageee">
-          <img src="/images/2410 images (5).png" />
+          <img src="/images/24 imeage-3.png" />
+        </div>
+        <div className="imageee">
+          <img src="/images/24 imeage-4.png" />
+        </div>
+        <div className="imageee">
+          <img src="/images/24 imeage-5.png" />
+        </div>
+        <div className="imageee">
+          <img src="/images/24 imeage-6.png" />
         </div>
       </div>
       <div className="empty"></div>
