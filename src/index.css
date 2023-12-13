@@ -116,3 +116,52 @@ body {
   width: 25rem;
   object-fit: contain;
 }
+@media screen and (min-width: 1500px) {
+  .top-region h3 {
+    padding-left: 15rem;
+    padding-right: 15rem;
+    font-size: 1.5rem;
+  }
+  .image-area {
+  }
+  .imageee {
+    width: 100%;
+  }
+  .imageee img {
+    width: 100%;
+    object-fit: contain;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .top-region h3 {
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
+}
+@media screen and (max-width: 950px) {
+  .top-region h3 {
+    padding-left: 9rem;
+    padding-right: 9rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .top-region h3 {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .top-region h3 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-size: 0.8rem;
+    line-height: 20px;
+  }
+  .imageee {
+    width: 15rem;
+  }
+  .imageee img {
+    width: 15rem;
+    object-fit: contain;
+  }
+}

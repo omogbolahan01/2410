@@ -78,7 +78,7 @@ export default function Home() {
         <div className="imageee">
           <img src="/images/24 imeage-6.png" />
         </div>
-        <div className="imageee">
+        {/* <div className="imageee">
           <img src="/images/24 imeage.png" />
         </div>
         <div className="imageee">
@@ -119,7 +119,7 @@ export default function Home() {
         </div>
         <div className="imageee">
           <img src="/images/24 imeage-6.png" />
-        </div>
+        </div> */}
       </div>
       <div className="empty"></div>
       <div className="social-area">
