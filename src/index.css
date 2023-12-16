@@ -116,7 +116,7 @@ body {
   width: 25rem;
   object-fit: contain;
 }
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1400px) {
   .top-region h3 {
     padding-left: 15rem;
     padding-right: 15rem;
